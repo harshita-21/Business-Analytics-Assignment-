@@ -1,0 +1,359 @@
+Business Analytics Assignment 
+Harshita Maheshwari
+1937035
+1MAECO
+
+
+
+1.	SELECT * FROM `bigquery-public-data.world_bank_health_population.health_nutrition_population` LIMIT 25
+
+Results
+country_name	country_code	indicator_name	indicator_code	year
+Arab World	ARB	Adolescent fertility rate (births per 1,000 women ages 15-19)	SP.ADO.TFRT	134.7723405
+Arab World	ARB	Adolescent fertility rate (births per 1,000 women ages 15-19)	SP.ADO.TFRT	135.3438591
+Arab World	ARB	Adolescent fertility rate (births per 1,000 women ages 15-19)	SP.ADO.TFRT	136.0302138
+Arab World	ARB	Adolescent fertility rate (births per 1,000 women ages 15-19)	SP.ADO.TFRT	135.8980255
+Arab World	ARB	Adolescent fertility rate (births per 1,000 women ages 15-19)	SP.ADO.TFRT	135.7218258
+Arab World	ARB	Adolescent fertility rate (births per 1,000 women ages 15-19)	SP.ADO.TFRT	135.3875632
+Arab World	ARB	Adolescent fertility rate (births per 1,000 women ages 15-19)	SP.ADO.TFRT	134.6612137
+Arab World	ARB	Adolescent fertility rate (births per 1,000 women ages 15-19)	SP.ADO.TFRT	133.7790024
+Arab World	ARB	Adolescent fertility rate (births per 1,000 women ages 15-19)	SP.ADO.TFRT	131.298708
+Arab World	ARB	Adolescent fertility rate (births per 1,000 women ages 15-19)	SP.ADO.TFRT	128.8522101
+Arab World	ARB	Adolescent fertility rate (births per 1,000 women ages 15-19)	SP.ADO.TFRT	126.5338022
+Arab World	ARB	Adolescent fertility rate (births per 1,000 women ages 15-19)	SP.ADO.TFRT	124.3183056
+Arab World	ARB	Adolescent fertility rate (births per 1,000 women ages 15-19)	SP.ADO.TFRT	122.2711106
+Arab World	ARB	Adolescent fertility rate (births per 1,000 women ages 15-19)	SP.ADO.TFRT	120.0121088
+Arab World	ARB	Adolescent fertility rate (births per 1,000 women ages 15-19)	SP.ADO.TFRT	117.7347814
+Arab World	ARB	Adolescent fertility rate (births per 1,000 women ages 15-19)	SP.ADO.TFRT	115.3772304
+Arab World	ARB	Adolescent fertility rate (births per 1,000 women ages 15-19)	SP.ADO.TFRT	112.9284216
+Arab World	ARB	Adolescent fertility rate (births per 1,000 women ages 15-19)	SP.ADO.TFRT	110.4113728
+Arab World	ARB	Adolescent fertility rate (births per 1,000 women ages 15-19)	SP.ADO.TFRT	106.5457092
+Arab World	ARB	Adolescent fertility rate (births per 1,000 women ages 15-19)	SP.ADO.TFRT	102.7339609
+Arab World	ARB	Adolescent fertility rate (births per 1,000 women ages 15-19)	SP.ADO.TFRT	99.00477991
+Arab World	ARB	Adolescent fertility rate (births per 1,000 women ages 15-19)	SP.ADO.TFRT	95.38260117
+Arab World	ARB	Adolescent fertility rate (births per 1,000 women ages 15-19)	SP.ADO.TFRT	91.80322989
+Arab World	ARB	Adolescent fertility rate (births per 1,000 women ages 15-19)	SP.ADO.TFRT	88.88010638
+Arab World	ARB	Adolescent fertility rate (births per 1,000 women ages 15-19)	SP.ADO.TFRT	85.93867205
+
+
+
+
+
+2.	SELECT * FROM `bigquery-public-data.san_francisco_bikeshare.bikeshare_trips` WHERE duration_sec > 789
+
+Results
+trip_id	duration_sec
+3.22E+15	1020
+2.53E+16	1340
+6.38E+16	790
+7.14E+16	949
+2.55E+16	1547
+2.08E+16	1069
+3.62E+15	14829
+1.99E+16	1141
+6.82E+15	4203
+6.02E+15	3535
+7.16E+16	1159
+3.92E+15	815
+2.26E+16	1224
+6.63E+16	900
+7.16E+16	1484
+3.62E+15	85555
+2.58E+16	1024
+1.54E+16	1453
+2.32E+15	3945
+2.53E+16	1646
+6.49E+16	12984
+5.29E+16	1079
+6.79E+16	1511
+6.88E+16	828
+6.74E+16	1165
+
+
+
+
+
+
+
+
+3.	SELECT * FROM `bigquery-public-data.noaa_significant_earthquakes.earthquakes` WHERE location_name ='HAWAII' AND month= 3
+
+Results
+    id	year	month	day	hour	minute	second	focal_depth	latitude	longitude
+6076	1839	3							
+6298	1926	3	20	9	3			20.5	-155.5
+6364	1952	3	17	3	58		33	19.11	-155.033
+
+
+
+
+
+
+4.	SELECT * FROM `bigquery-public-data.medicare.inpatient_charges_2011` WHERE total_discharges BETWEEN 20 AND 50 LIMIT 15
+
+Results
+ drg_definition                                                        
+	       
+                                                               total_discharges
+481 - HIP & FEMUR PROCEDURES EXCEPT MAJOR JOINT W CC	26
+473 - CERVICAL SPINAL FUSION W/O CC/MCC	38
+329 - MAJOR SMALL & LARGE BOWEL PROCEDURES W MCC	23
+552 - MEDICAL BACK PROBLEMS W/O MCC	20
+682 - RENAL FAILURE W MCC	29
+191 - CHRONIC OBSTRUCTIVE PULMONARY DISEASE W CC	45
+603 - CELLULITIS W/O MCC	35
+918 - POISONING & TOXIC EFFECTS OF DRUGS W/O MCC	30
+640 - MISC DISORDERS OF NUTRITION,METABOLISM,FLUIDS/ELECTROLYTES W MCC	29
+176 - PULMONARY EMBOLISM W/O MCC	26
+378 - G.I. HEMORRHAGE W CC	49
+309 - CARDIAC ARRHYTHMIA & CONDUCTION DISORDERS W CC	41
+064 - INTRACRANIAL HEMORRHAGE OR CEREBRAL INFARCTION W MCC	34
+314 - OTHER CIRCULATORY SYSTEM DIAGNOSES W MCC	20
+853 - INFECTIOUS & PARASITIC DISEASES W O.R. PROCEDURE W MCC	22
+
+
+
+5.	SELECT AVG(infant_mortality) FROM `bigquery-public-data.census_bureau_international.mortality_life_expectancy` LIMIT 30
+
+Results 
+year	infant_mortality
+1981	23.3
+1982	23.04
+1983	22.79
+1984	22.55
+1985	22.31
+1986	22.07
+1987	21.85
+1988	21.62
+1989	21.41
+1990	21.2
+1991	20.99
+1992	20.79
+1993	20.81
+1994	20.59
+1995	20.49
+1996	20.2
+1997	20.28
+1998	19.81
+1999	19.64
+2000	19.48
+2001	18.68
+2002	17.91
+2003	17.17
+2004	16.46
+2005	15.78
+2006	15.26
+2007	14.75
+2008	14.26
+2009	13.79
+2010	13.34
+
+Average = 28.85088039424621
+
+
+
+6.	SELECT MAX(housing_units) FROM `bigquery-public-data.census_bureau_acs.blockgroup_2013_5yr` LIMIT 40
+
+Results
+geo_id	housing_units
+1.2086E+11	89
+3.6005E+11	195
+4.8113E+11	194
+3.6047E+11	104
+3.9165E+11	463
+3.6061E+11	16
+1.70315E+11	324
+3.60911E+11	141
+2.45103E+11	193
+3.1055E+11	459
+3.6085E+11	120
+1.2086E+11	57
+3.6007E+11	51
+1.2011E+11	594
+2.61252E+11	68
+1.7201E+11	243
+4.4007E+11	387
+4.7157E+11	136
+40130405293	288
+1.2097E+11	265
+2.8089E+11	114
+40190043322	369
+3.9113E+11	35
+5.15102E+11	333
+2.45101E+11	143
+3.60471E+11	593
+40134226262	1133
+40099616002	36
+1.2099E+11	455
+3.90352E+11	604
+60019819001	42
+2.70531E+11	468
+2.2071E+11	59
+2.2071E+11	63
+90012111001	15
+3.7119E+11	38
+3.6071E+11	92
+2.61635E+11	186
+2.61252E+11	81
+5.50792E+11	23
+
+MAX = 22424.0
+
+
+
+
+
+
+
+7.	SELECT * FROM `bigquery-public-data.fda_food.food_events` ORDER BY date_started LIMIT 20
+
+
+Results
+reactions	date_created
+Hospitalisation	26-05-2017
+Vitamin B12 increased,Overdose,Asthenia,Pain,Neuropathy peripheral	15-02-2018
+Rash generalised,Eczema	22-12-2017
+Renal pain,Back pain,Nephrolithiasis	28-12-2017
+Sensation of pressure,Heart rate decreased,Paraesthesia,Blood pressure increased	14-06-2017
+Balance disorder,Visual impairment,Constipation	02-04-2018
+Alopecia,Trichorrhexis	13-12-2017
+Pruritus,Alopecia	02-02-2018
+Condition aggravated,Lacrimation increased,Infection,Vision blurred,Swelling face,Eye irritation	25-05-2018
+Colitis ulcerative,Rectal haemorrhage,Abdominal discomfort,Diarrhoea	09-04-2018
+Malaise	13-12-2017
+Dyspnoea,Oesophageal obstruction,Choking,Aspiration,Foreign body,Dysphagia,Throat irritation	19-01-2018
+Syncope,Nausea	07-05-2018
+Weight decreased,Blood pressure fluctuation,Blood pressure increased,Intraocular pressure increased	24-10-2017
+Fatigue,Metastasis,Constipation,Prostatic specific antigen increased	28-06-2017
+Food allergy	27-11-2017
+Alopecia	14-11-2017
+Pain,Rash	31-01-2018
+Ill-defined disorder,Fatigue	29-09-2017
+Eye pain,Chemical injury,Dry eye,Eyelid oedema,Eyelid irritation,Eye irritation	04-01-2018
+
+
+
+
+
+8.	SELECT * FROM `bigquery-public-data.fdic_banks.institutions` ORDER BY institution_name ASC, city ASC, county_name ASC, zip_code ASC, LIMIT 20
+
+Results 
+institution_name	city	county_name	zip_code
+102 Valley Bank	Hopkins	Nodaway	64461
+1880 Bank	Cambridge	Dorchester	21613
+1ST BANK	Evanston	Uinta	82930
+1ST Dakota Home Savings and Loan Association	Pierre	Hughes	57501
+1ST Federal Savings and Loan Association of Estherville and Emmetsburg	Estherville	Emmet	51334
+1ST Home Federal Savings and Loan Association of the Carolinas FA	Greensboro	Guilford	27401
+1ST Ohio Savings Bank, FSB	Saint Bernard	Hamilton	45217
+1ST Savings of Louisiana	La Place	St. John The Baptist	70068
+1st Advantage Bank	Saint Peters	St. Charles	63376
+1st American State Bank of Minnesota	Hancock	Stevens	56244
+1st Atlantic Bank	Little River	Horry	29566
+1st Bank	Broadus	Powder River	59317
+1st Bank & Trust	Broken Bow	Mccurtain	74728
+1st Bank Oklahoma	Claremore	Rogers	74017
+1st Bank Yuma	Yuma	Yuma	85364
+1st Bank in Hominy	Hominy	Osage	74035
+1st Bank of Catoosa	Catoosa	Rogers	74015
+1st Bank of Sea Isle City	Sea Isle City	Cape May	8243
+1st Bank of Troy	Troy	Doniphan	66087
+1st Bank, National Association.	Texarkana	Bowie	75503
+
+
+
+
+
+9.	SELECT `bigquery-public-data.fdic_banks.institutions`. total_assets, `bigquery-public-data.fdic_banks.locations`.state_name, `bigquery-public-data.fdic_banks.institutions`.zip_code FROM `bigquery-public-data.fdic_banks.institutions` INNER JOIN  `bigquery-public-data.fdic_banks.locations` ON `bigquery-public-data.fdic_banks.institutions`. institution_name= `bigquery-public-data.fdic_banks.locations`. institution_name LIMIT 40
+Results
+total_assets	state_name	zip_code
+1138955	Alabama	36066
+1138955	Alabama	36066
+1138955	Alabama	36066
+1138955	Alabama	36066
+1138955	Alabama	36066
+1138955	Alabama	36066
+1138955	Alabama	36066
+1138955	Alabama	36066
+1138955	Alabama	36066
+1138955	Alabama	36066
+1138955	Alabama	36066
+1138955	Alabama	36066
+1138955	Alabama	36066
+1138955	Alabama	36066
+1138955	Alabama	36066
+1138955	Alabama	36066
+1138955	Alabama	36066
+1138955	Alabama	36066
+51143	South Carolina	36067
+51143	South Carolina	36067
+51143	South Carolina	36067
+51143	South Carolina	36067
+51143	Georgia	36067
+51143	Georgia	36067
+51143	Georgia	36067
+51143	Kentucky	36067
+51143	Kentucky	36067
+51143	Kentucky	36067
+51143	Kentucky	36067
+51143	Kentucky	36067
+51143	Arkansas	36067
+51143	Arkansas	36067
+51143	Arkansas	36067
+51143	Arkansas	36067
+51143	Arkansas	36067
+51143	Arkansas	36067
+51143	South Carolina	36067
+51143	South Carolina	36067
+51143	South Carolina	36067
+51143	South Carolina	36067
+
+
+
+
+
+10.	 SELECT `bigquery-public-data.fdic_banks.locations`. branch_name, `bigquery-public-data.fdic_banks.institutions`.state_name, `bigquery-public-data.fdic_banks.locations`.zip_code FROM `bigquery-public-data.fdic_banks.locations` LEFT JOIN  `bigquery-public-data.fdic_banks.institutions` ON `bigquery-public-data.fdic_banks.locations`. institution_name= `bigquery-public-data.fdic_banks.institutions`. institution_name LIMIT 40
+
+Results
+branch_name	state_name	zip_code
+CAPITAL ONE LONDON BRANCH	Virginia	0
+CAYMAN ISLANDS BRANCH	Delaware	0
+MANAMA BRANCH (FRGN)	Ohio	0
+49 AVENIDA DUARTE BRANCH (FRGN)	Ohio	0
+MADRID BRANCH (FRGN)	Ohio	0
+BARCELONA BRANCH (FRGN)	Ohio	0
+EXCHANGE SQUARE BRANCH (FRGN)	Ohio	0
+LONDON BRANCH (FRGN)	Ohio	0
+SINGAPORE BRANCH (FRGN)	Ohio	0
+GROSVENOR SQUARE BRANCH (FRGN)	Ohio	0
+CURITIBA BRANCH (FRGN)	South Dakota	0
+COLON BRANCH (FRGN)	South Dakota	0
+GENEVA BRANCH (FRGN)	South Dakota	0
+DUBAI BRANCH (FRGN)	South Dakota	0
+OAKES FIELD BRANCH (FRGN)	South Dakota	0
+CIPRIANO MIRO BRANCH (FRGN)	South Dakota	0
+DELMAS ROAD BRANCH (FRGN)	South Dakota	0
+KALLITHEA BRANCH (FRGN)	South Dakota	0
+CAJA AUXILIAR IBM BRANCH (FRGN)	South Dakota	0
+AVENIDA SANTOS DUMONT BRANCH (FRGN)	South Dakota	0
+TSUKIJI BRANCH (FRGN)	South Dakota	0
+ALTO PALERMO BRANCH	South Dakota	0
+OLYMPIC BRANCH (FRGN)	South Dakota	0
+WELLS FARGO BANK, N.A.- BANGKOK, THAILAND	California	0
+WELLS FARGO BANK, N.A.- BANGKOK, THAILAND	South Dakota	0
+WELLS FARGO BANK, N.A. - MILANO, ITALY	California	0
+WELLS FARGO BANK, N.A. - MILANO, ITALY	South Dakota	0
+NASSAU BRANCH FRGN	Ohio	0
+LONDON BRANCH (FRGN)	New York	0
+PARIS BRANCH (FRGN)	Ohio	0
+LONDON BRANCH (FRGN)	Nevada	0
+LONDON BRANCH (FRGN)	North Carolina	0
+LONDON BRANCH (FRGN)	North Carolina	0
+CAYMAN BRANCH	California	0
+CAYMAN BRANCH	Texas	0
+CAYMAN BRANCH	Texas	0
+CAYMAN BRANCH	Texas	0
+CAYMAN BRANCH	Texas	0
+CAYMAN BRANCH	Texas	0
+CAYMAN BRANCH	Washington	0
+
